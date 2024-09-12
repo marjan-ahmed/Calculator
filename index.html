@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <title>Calculator</title>
+</head>
+<body>
+    
+<!-- Add this inside your <body> tag, before or after the calculator -->
+<button id="toggle-theme" aria-label="Toggle Theme">
+    <i class="fa-solid fa-moon"></i> <!-- Change the icon as needed -->
+</button>
+
+    <div class="calculator">
+        <div class="text-input">
+            <input type="text" id="display" readonly>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="clear"><i class="fa-solid fa-c"></i></button>
+            <button class="btn" value="1">1</button>
+            <button class="btn" value="2">2</button>
+            <button class="btn" value="3">3</button>
+            <button class="btn" value="4">4</button>
+            <button class="btn" value="5">5</button>
+            <button class="btn" value="6">6</button>
+            <button class="btn" value="7">7</button>
+            <button class="btn" value="8">8</button>
+            <button class="btn" value="9">9</button>
+            <button class="btn" value="0">0</button>
+
+            <!-- Operator buttons -->
+            <button class="btn operator" value="+"><i class="fa-solid fa-plus"></i></button>
+            <button class="btn operator" value="-"><i class="fa-solid fa-minus"></i></button>
+            <button class="btn operator" value="*"><i class="fa-solid fa-xmark"></i></button>
+            <button class="btn operator" value="÷"><i class="fa-solid fa-divide"></i></button>
+
+            <!-- Equals button -->
+            <button class="btn" id="equals"><i class="fa-solid fa-equals"></i></button>
+
+        </div>
+    </div>
+
+
+    <script src="src/main.js"></script>
+</body>
+</html>
